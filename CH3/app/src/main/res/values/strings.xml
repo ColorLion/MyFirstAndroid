@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BmiCalculator</string>
+    <string name="resultText">TextView</string>
 </resources>
