@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 // build.gradle(module)에 id 'kotlin-android-extensions' 추가해야됨
 import kotlinx.android.synthetic.main.activity_main.*
-import android.preference.PreferenceManager
-import android.content.SharedPreferences
+//import android.preference.PreferenceManager
+//import android.content.SharedPreferences
 import org.jetbrains.anko.startActivity
 
 class MainActivity : AppCompatActivity() {
@@ -64,6 +64,5 @@ class MainActivity : AppCompatActivity() {
                     "height" to heightEditText.text.toString()
             )
         }
-
     }
 }
