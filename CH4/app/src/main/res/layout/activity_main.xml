@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C8E6E3"
     tools:context=".MainActivity">
 
     <TextView
@@ -34,21 +35,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:background="#FFF6F6"
         android:clickable="true"
-        android:contentDescription="TODO"
+        android:contentDescription="start"
         android:tint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FFFFFF"
         app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/restFab"
+        android:id="@+id/resetFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="20dp"
         android:clickable="true"
+        android:contentDescription="refresh"
         android:tint="#FFFFFF"
         app:backgroundTint="#E91E63"
         app:fabSize="auto"
@@ -73,11 +77,13 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="160dp"
+        android:background="#FEDBDB"
         app:layout_constraintBottom_toTopOf="@+id/fab"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secTextView">
+        app:layout_constraintTop_toBottomOf="@+id/secTextView"
+        app:layout_constraintVertical_bias="0.114">
 
         <LinearLayout
             android:id="@+id/labLayout"
