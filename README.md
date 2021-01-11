@@ -1,6 +1,8 @@
 # 안드로이드 생존 코딩 저장용 리포
 -------------------------------------
 ## 체인지 로그
+2021.1.11
+- bmicalculator, stopwatch, etc end
 2020.12.30
 - interface, null, list 구문
 
