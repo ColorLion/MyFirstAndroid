@@ -8,7 +8,11 @@ import android.provider.MediaStore
 import android.util.Log
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.*
+import org.jetbrains.anko.support.v4.viewPager
+
 
 class MainActivity : AppCompatActivity() {
     private val REQUEST_READ_EXTERNAL_STORAGE = 1000
@@ -37,8 +41,6 @@ class MainActivity : AppCompatActivity() {
             // 이미 권한이 허용됨
             getAllPhotos()
         }
-
-
     }
 
     private fun getAllPhotos(){
@@ -50,15 +52,31 @@ class MainActivity : AppCompatActivity() {
                             // desc 한칸 띄워서 써야함 ㅋㅋㅋ
                             MediaStore.Images.ImageColumns.DATE_TAKEN + " DESC")
 
+        // 사진을 가져올 때마다 PhotoFragment.newInstance(uri)로 프래그먼트를 생성하며 리스트에 추가
+        val fragments = ArrayList<Fragment>()
+
         if (cursor != null) {
             while (cursor.moveToNext()){
                 //사진 경로 uri 가져오기
                 val uri = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA))
                 Log.d("MainActivity", uri)
+                fragments.add(PhotoFragment.newInstance(uri))
             }
             // 커서는 다쓰면 꼭 close 해줘야 한다 안그럼 메모리 누수난다
             cursor.close()
         }
+
+        // viewPager2와 adapter 연결
+        val adapter = MyPagerAdapter(this)
+        adapter.updateFragments(fragments)
+        viewPager.adapter = adapter
+
+
+        /* 구버전 viewPager 코드
+        val adapter = MyPagerAdapter(supportFragmentManager)
+        adapter.updateFragments(fragments)
+        viewPager.adapter = adapter
+         */
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
