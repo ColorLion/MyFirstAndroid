@@ -1,6 +1,11 @@
 # 안드로이드 생존 코딩 저장용 리포
 -------------------------------------
 ## 체인지 로그
+2021.1.26
+- end gallery
+  - viewPager -> viewPager2
+- start gps apps
+
 2021.1.20
 - start Gallery
 - 권한 사용
