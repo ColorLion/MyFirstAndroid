@@ -2,10 +2,13 @@ package com.example.gpsmap
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.WindowManager
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationCallback
@@ -18,6 +21,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.PolylineOptions
 import org.jetbrains.anko.alert
 import org.jetbrains.anko.noButton
 import org.jetbrains.anko.toast
@@ -33,6 +37,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     
     //실행중 권한 요청 메서드 작성
     private val REQUEST_ACCESS_FINE_LOCATION = 1000
+
+    // PolyLine 옵션
+    private val polyLineOptions = PolylineOptions().width(5f).color(Color.GREEN)
 
     //인자 2개 받음, 두 함수는 인자가 없고 반환 값도 없음
     private fun permissionCheck(cancel: () -> Unit, ok: () -> Unit){
@@ -80,6 +87,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 17f))
 
                 Log.d("MapsActivity", "위도: $latitude, 경도: $longitude")
+                // PolyLine에 좌표 추가
+                polyLineOptions.add(latLng)
+
+                // 선 그리기
+                mMap.addPolyline(polyLineOptions)
             }
         }
     }
@@ -125,6 +137,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // 화면 유지
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        // 세로 모드로 화면 고정
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         // SupportMapFragment를 가져와서 지도가 준비되면 알림을 받음
         setContentView(R.layout.activity_maps)
         
