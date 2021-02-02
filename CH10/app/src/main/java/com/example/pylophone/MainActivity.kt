@@ -68,13 +68,13 @@ class MainActivity : AppCompatActivity() {
                 rightUpText.setText("OFF")
             }
         }
-        fastRateSwitch.setOnCheckedChangeListener{ buttonView, isChecked ->
-            if(isChecked){
+        fastRateSwitch.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
                 rate = 1.2f
                 fastRateText.setText("RATE x2")
             } else {
                 rate = 1.0f
-                fastRateText .setText("OFF")
+                fastRateText.setText("OFF")
             }
         }
 
