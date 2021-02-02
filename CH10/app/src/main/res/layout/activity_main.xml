@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/note1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:background="#66E91E63"
+        app:layout_constraintEnd_toStartOf="@+id/note2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/note5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="128dp"
+        android:background="#CCE91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/note33"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="#663F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/note21"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note19" />
+
+    <TextView
+        android:id="@+id/note4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#B3E91E63"
+        app:layout_constraintEnd_toStartOf="@+id/note5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/note2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#80E91E63"
+        app:layout_constraintEnd_toStartOf="@+id/note3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/note32"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="16dp"
+        android:background="#CC3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note31"
+        app:layout_constraintTop_toBottomOf="@+id/note18" />
+
+    <TextView
+        android:id="@+id/note21"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="#803F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/note35"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note33"
+        app:layout_constraintTop_toBottomOf="@+id/note20" />
+
+    <TextView
+        android:id="@+id/note3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:background="#99E91E63"
+        app:layout_constraintEnd_toStartOf="@+id/note4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/note13"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#99FFC107"
+        app:layout_constraintEnd_toStartOf="@+id/note12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note14"
+        app:layout_constraintTop_toBottomOf="@+id/note3" />
+
+    <TextView
+        android:id="@+id/note14"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#80FFC107"
+        app:layout_constraintEnd_toStartOf="@+id/note13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note8"
+        app:layout_constraintTop_toBottomOf="@+id/note2" />
+
+    <TextView
+        android:id="@+id/note8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="30dp"
+        android:background="#66FFC107"
+        app:layout_constraintEnd_toStartOf="@+id/note14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note1" />
+
+    <TextView
+        android:id="@+id/note35"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="#993F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/note31"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note21"
+        app:layout_constraintTop_toBottomOf="@+id/note34" />
+
+    <TextView
+        android:id="@+id/note17"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#B3009688"
+        app:layout_constraintEnd_toStartOf="@+id/note18"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note34"
+        app:layout_constraintTop_toBottomOf="@+id/note12" />
+
+    <TextView
+        android:id="@+id/note20"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#80009688"
+        app:layout_constraintEnd_toStartOf="@+id/note34"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note19"
+        app:layout_constraintTop_toBottomOf="@+id/note14" />
+
+    <TextView
+        android:id="@+id/note19"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="30dp"
+        android:background="#66009688"
+        app:layout_constraintEnd_toStartOf="@+id/note20"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note8" />
+
+    <TextView
+        android:id="@+id/note11"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="128dp"
+        android:background="#CCFFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note12"
+        app:layout_constraintTop_toBottomOf="@+id/note5" />
+
+    <TextView
+        android:id="@+id/note12"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#B3FFC107"
+        app:layout_constraintEnd_toStartOf="@+id/note11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note13"
+        app:layout_constraintTop_toBottomOf="@+id/note4" />
+
+    <TextView
+        android:id="@+id/note31"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="#B33F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/note32"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note35"
+        app:layout_constraintTop_toBottomOf="@+id/note17" />
+
+    <TextView
+        android:id="@+id/note34"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#99009688"
+        app:layout_constraintEnd_toStartOf="@+id/note17"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note20"
+        app:layout_constraintTop_toBottomOf="@+id/note13" />
+
+    <TextView
+        android:id="@+id/note18"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="128dp"
+        android:background="#CC009688"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/note17"
+        app:layout_constraintTop_toBottomOf="@+id/note11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
