@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/note33"
+        android:id="@+id/note16"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="128dp"
@@ -40,10 +40,10 @@
         android:layout_marginBottom="16dp"
         android:background="#663F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/note21"
+        app:layout_constraintEnd_toStartOf="@+id/note17"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/note19" />
+        app:layout_constraintTop_toBottomOf="@+id/note11" />
 
     <TextView
         android:id="@+id/note4"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/note32"
+        android:id="@+id/note20"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
@@ -81,11 +81,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note31"
-        app:layout_constraintTop_toBottomOf="@+id/note18" />
+        app:layout_constraintStart_toEndOf="@+id/note19"
+        app:layout_constraintTop_toBottomOf="@+id/note15" />
 
     <TextView
-        android:id="@+id/note21"
+        android:id="@+id/note17"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
@@ -93,10 +93,10 @@
         android:layout_marginBottom="16dp"
         android:background="#803F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/note35"
+        app:layout_constraintEnd_toStartOf="@+id/note18"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note33"
-        app:layout_constraintTop_toBottomOf="@+id/note20" />
+        app:layout_constraintStart_toEndOf="@+id/note16"
+        app:layout_constraintTop_toBottomOf="@+id/note12" />
 
     <TextView
         android:id="@+id/note3"
@@ -111,43 +111,43 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/note13"
+        android:id="@+id/note8"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:background="#99FFC107"
-        app:layout_constraintEnd_toStartOf="@+id/note12"
+        app:layout_constraintEnd_toStartOf="@+id/note9"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note14"
+        app:layout_constraintStart_toEndOf="@+id/note7"
         app:layout_constraintTop_toBottomOf="@+id/note3" />
 
     <TextView
-        android:id="@+id/note14"
+        android:id="@+id/note7"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:background="#80FFC107"
-        app:layout_constraintEnd_toStartOf="@+id/note13"
+        app:layout_constraintEnd_toStartOf="@+id/note8"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note8"
+        app:layout_constraintStart_toEndOf="@+id/note6"
         app:layout_constraintTop_toBottomOf="@+id/note2" />
 
     <TextView
-        android:id="@+id/note8"
+        android:id="@+id/note6"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="30dp"
         android:background="#66FFC107"
-        app:layout_constraintEnd_toStartOf="@+id/note14"
+        app:layout_constraintEnd_toStartOf="@+id/note7"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/note1" />
 
     <TextView
-        android:id="@+id/note35"
+        android:id="@+id/note18"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
@@ -155,49 +155,49 @@
         android:layout_marginBottom="16dp"
         android:background="#993F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/note31"
+        app:layout_constraintEnd_toStartOf="@+id/note19"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note21"
-        app:layout_constraintTop_toBottomOf="@+id/note34" />
+        app:layout_constraintStart_toEndOf="@+id/note17"
+        app:layout_constraintTop_toBottomOf="@+id/note13" />
 
     <TextView
-        android:id="@+id/note17"
+        android:id="@+id/note14"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:background="#B3009688"
-        app:layout_constraintEnd_toStartOf="@+id/note18"
+        app:layout_constraintEnd_toStartOf="@+id/note15"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note34"
-        app:layout_constraintTop_toBottomOf="@+id/note12" />
+        app:layout_constraintStart_toEndOf="@+id/note13"
+        app:layout_constraintTop_toBottomOf="@+id/note9" />
 
     <TextView
-        android:id="@+id/note20"
+        android:id="@+id/note12"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:background="#80009688"
-        app:layout_constraintEnd_toStartOf="@+id/note34"
+        app:layout_constraintEnd_toStartOf="@+id/note13"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note19"
-        app:layout_constraintTop_toBottomOf="@+id/note14" />
+        app:layout_constraintStart_toEndOf="@+id/note11"
+        app:layout_constraintTop_toBottomOf="@+id/note7" />
 
     <TextView
-        android:id="@+id/note19"
+        android:id="@+id/note11"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="30dp"
         android:background="#66009688"
-        app:layout_constraintEnd_toStartOf="@+id/note20"
+        app:layout_constraintEnd_toStartOf="@+id/note12"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/note8" />
+        app:layout_constraintTop_toBottomOf="@+id/note6" />
 
     <TextView
-        android:id="@+id/note11"
+        android:id="@+id/note10"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
@@ -206,23 +206,23 @@
         android:background="#CCFFC107"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note12"
+        app:layout_constraintStart_toEndOf="@+id/note9"
         app:layout_constraintTop_toBottomOf="@+id/note5" />
 
     <TextView
-        android:id="@+id/note12"
+        android:id="@+id/note9"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:background="#B3FFC107"
-        app:layout_constraintEnd_toStartOf="@+id/note11"
+        app:layout_constraintEnd_toStartOf="@+id/note10"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note13"
+        app:layout_constraintStart_toEndOf="@+id/note8"
         app:layout_constraintTop_toBottomOf="@+id/note4" />
 
     <TextView
-        android:id="@+id/note31"
+        android:id="@+id/note19"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
@@ -230,25 +230,25 @@
         android:layout_marginBottom="16dp"
         android:background="#B33F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/note32"
+        app:layout_constraintEnd_toStartOf="@+id/note20"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note35"
-        app:layout_constraintTop_toBottomOf="@+id/note17" />
+        app:layout_constraintStart_toEndOf="@+id/note18"
+        app:layout_constraintTop_toBottomOf="@+id/note14" />
 
     <TextView
-        android:id="@+id/note34"
+        android:id="@+id/note13"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:background="#99009688"
-        app:layout_constraintEnd_toStartOf="@+id/note17"
+        app:layout_constraintEnd_toStartOf="@+id/note14"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note20"
-        app:layout_constraintTop_toBottomOf="@+id/note13" />
+        app:layout_constraintStart_toEndOf="@+id/note12"
+        app:layout_constraintTop_toBottomOf="@+id/note8" />
 
     <TextView
-        android:id="@+id/note18"
+        android:id="@+id/note15"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
@@ -257,7 +257,7 @@
         android:background="#CC009688"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/note17"
-        app:layout_constraintTop_toBottomOf="@+id/note11" />
+        app:layout_constraintStart_toEndOf="@+id/note14"
+        app:layout_constraintTop_toBottomOf="@+id/note10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
