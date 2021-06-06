@@ -6,10 +6,17 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+<<<<<<< HEAD
+=======
+import io.realm.Realm
+import io.realm.Sort
+import io.realm.kotlin.where
+>>>>>>> 7c273e51c6eb266230b07fa0f7482f4751e4ffbf
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
 
 class MainActivity : AppCompatActivity() {
+    val realm = Realm.getDefaultInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,11 +27,26 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+<<<<<<< HEAD
 
         // 새 할일 추가
         fab.setOnClickListener {
             startActivity<EditActivity>()
         }
+=======
+        fab.setOnClickListener {
+            startActivity<EditActivity>()
+        }
+
+        val realmResult = realm.where<Todo>()
+            .findAll()
+            .sort("date", Sort.DESCENDING)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        realm.close()
+>>>>>>> 7c273e51c6eb266230b07fa0f7482f4751e4ffbf
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

@@ -40,6 +40,10 @@
         android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
+=======
+        app:rippleColor="#FFFFFF"
+>>>>>>> 7c273e51c6eb266230b07fa0f7482f4751e4ffbf
         app:srcCompat="@drawable/ic_baseline_check_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -48,6 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
+<<<<<<< HEAD
         android:backgroundTint="#C50F52"
         android:clickable="true"
         android:tint="@color/white"
@@ -55,4 +60,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_baseline_delete_24" />
 
+=======
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+>>>>>>> 7c273e51c6eb266230b07fa0f7482f4751e4ffbf
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,15 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+<<<<<<< HEAD
     id 'kotlin-kapt'
     id 'realm-android'
     id 'kotlin-android-extensions'
+=======
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'realm-android'
+>>>>>>> 7c273e51c6eb266230b07fa0f7482f4751e4ffbf
 }
 
 android {
@@ -36,6 +42,7 @@ android {
 
 dependencies {
     implementation "org.jetbrains.anko:anko:$anko_version"
+    implementation 'io.realm:android-adapters:3.1.0'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
